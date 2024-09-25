@@ -1,0 +1,688 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Datavista2K24</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    padding: 20px;
+}
+
+header.rulebook {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header.rulebook h1 {
+    font-size: 36px;
+    color: red;
+    text-transform: uppercase;
+}
+
+.event-schedule {
+    text-align: center;
+}
+
+.event-schedule h2 {
+    font-size: 28px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.event-schedule {
+    margin: 0; /* Remove margin if it exists */
+    padding: 0; /* Remove padding if it exists */
+}
+
+.event-schedule h2 {
+    text-align: center; /* Center the header if desired */
+}
+
+table {
+    width: 100%;
+    max-width: 800px; /* Set a max-width to avoid it being too wide on larger screens */
+    margin: 0 auto 30px; /* Center the table and add bottom margin */
+    border-collapse: collapse;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent border radius from being cut off */
+}
+
+table th, table td {
+    padding: 12px; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+table th {
+    background-color: #4A4A4A; /* Lighter grey for headers */
+    color: #EAEAEA; /* Light color for better contrast */
+    font-weight: bold;
+}
+
+table td {
+    background-color: #2B2B2B; /* Darker shade for rows */
+    color: #E0E0E0; /* Light text color */
+}
+
+/* Add hover effect for table rows */
+table tr:hover td {
+    background-color: #5A5A5A; /* Slightly lighter background on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Add a border for the table */
+table {
+    border: 2px solid #555; /* Subtle border for the table */
+}
+
+/* Specific styles for the "BREAK" row */
+.lunch {
+    background-color: #3B3B3B; /* Different background for the break row */
+    color: red; /* Different text color for visibility */
+    font-weight: bold; /* Make it bold */
+}
+
+
+.general-rules {
+    margin-top: 40px;
+}
+
+.general-rules h2 {
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.general-rules ul {
+    list-style-type: disc; /* Changed to disc for bullet points */
+    padding-left: 20px;
+}
+
+.general-rules ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* Text color is white */
+}
+
+.download-link {
+    display: inline-flex; /* Flexbox for better alignment */
+    align-items: center; /* Center the icon and text vertically */
+    padding: 5px 10px; /* Padding for the link */
+    color: red; /* Text color */
+    font-size: 15px; /* Font size */
+    font-weight: bold; /* Font weight */
+    border: 2px solid red; /* Outline border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.download-link:hover {
+    background-color: rgba(0, 0, 255, 0.1); /* Light blue background on hover */
+    color: red; /* Darker color on hover */
+}
+
+.download-icon {
+    margin-right: 8px; /* Space between icon and text */
+}
+.contacts {
+    margin-bottom: 20px; /* Space between each contact section */
+}
+
+
+.contacts p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #ada8a8;
+}
+
+
+.footer {
+    background-color: black;
+    padding: 40px 0;
+    color: #E0E0E0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.copy-right_text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #E0E0E0;
+    line-height: 1.5;
+}
+
+.copy_right a {
+    color: #E0E0E0;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.copy_right i {
+    color: red; /* Heart color */
+    margin-left: 5px;
+}
+
+.gdlr-core-social-network-item {
+    margin-top: 20px;
+}
+
+.gdlr-core-social-network-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: red;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.gdlr-core-social-network-icon:hover {
+    color: #ff4757; /* Icon hover color */
+}
+
+.gdlr-core-social-network-icon i {
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 20px 0;
+    }
+    
+    .gdlr-core-social-network-icon {
+        margin: 0 5px;
+    }
+    
+    .copy_right {
+        font-size: 12px;
+    }
+}
+
+
+            </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="header_bottom_border">
+                        <div class="row align-items-center">
+                            <div class="col-xl-3 col-lg-3">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">home</a></li>
+                                            <li><a href="#our-events">Events</a></li>
+                                            <li><a href="#about">Schedule</a></li>
+                                            <li><a href="#contact">Contact</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                                <div class="buy_tkt">
+                                    <div class="book_btn d-none d-lg-block">
+                                        <a href="index.html">Register Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <div class="shape_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+                                <img src="" alt="">
+                            </div>
+                            <div class="shape_2 wow fadeInDown" data-wow-duration="1s" data-wow-delay=".2s">
+                                <img src="" alt="">
+                            </div>
+                            <span class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".3s"></span>
+                            <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">Data vista </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- performar_area_start  -->
+    <div class="performar_area black_bg" id="our-events">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title mb-80">
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">OUR EVENTS</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row"> 
+                        <div class="col-lg-6 col-md-6">
+                            <div   class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                                <div data-tilt class="thumb">
+                                    <img src="Paper-Presentation.jpg" alt="">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>DATADIVE</h4>
+                                    <h4>(Paper Presentation)</h4>
+                                    <p>
+                                        Date: 1st Oct 2024<br>
+                                        Time: 10 : 30 AM - 12 : 00 PM<br>
+                                        Venue: ANDRESON HALL<br>
+                                        Student Co-ordinator: HARINI<br>
+                                        Contact: +91 80989 83143<br>
+                                    </p>
+                                    <a class="btn btn-default" href="paperpresent.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right"> Rules</span>
+                                    </a>
+                                    <a class="btn btn-default" href="paperre.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right">Register</span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div  class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                <div data-tilt class="thumb">
+                                    <img src="technical.jpg" alt="">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>DECODE</h4>
+                                    <h4>(HACKATHON)</h4>
+                                    <p>
+                                        Date: 1st Oct 2024<br>
+                            Time: 10 : 30 AM - 12 : 00 PM<br>
+                            Venue: DATA ANALYTICS LAB<br>
+                            Student Co-ordinator: HARISH<br>
+                            Contact No: +91 63793 63245<br>
+                                    </p>
+                                    <a class="btn btn-default" href="debugging.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right">Rules</span> 
+                                    </a>
+                                    <a class="btn btn-default" href="debuggreg.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right">Register</span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div  class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                                <div data-tilt class="thumb">
+                                    <img src="quiz.png" alt="">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>SCIBER IQ</h4>
+                                    <h4>(Quiz)</h4>
+                                    <p>
+                                        Date: 1st Oct 2024<br>
+                                        Time: 10 : 30 AM - 12 : 00 PM<br>
+                                        Venue: CLASS ROOM<br>
+                                        Student Co-ordinator: DAVIS<br>
+                                        Contact No: +91 87544 76340<br>
+                                    </p>
+                                    <a class="btn btn-default" href="quiz.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right">Rules</span> 
+                                    </a>
+                                    <a class="btn btn-default" href="quizreg.html" >
+                                        <span class="glyphicon glyphicon-circle-arrow-right">Register</span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div  class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                                <div data-tilt class="thumb">
+                                    <img src="adzap.jpg" alt="">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>BRAINZAP</h4>
+                                    <h4>(Adzap)</h4>
+                                    <p>
+                                        Date: 1st oct 2024<br>
+                                        Time: 1 : 30 PM - 3 : 00 PM<br>
+                                        Venue: MARGARET HALL<br>
+                                        Student Co-ordinator: REYA FATHIMA<br>
+                                        Contact No: +91 82489 86288<br>
+                                    </p>
+                                    <a class="btn btn-default" href="adzap.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right">Rules</span> 
+                                    </a>
+                                    <a class="btn btn-default" href="adzapreg.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right">Register</span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                         
+                        <div class="col-lg-6 col-md-6">
+                            <div  class="single_performer wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                                <div data-tilt class="thumb">
+                                    <img src="vis.jpg" alt="">
+                                </div>
+                                <div class="performer_heading">
+                                    <h4>VISUAL FUSION</h4>
+                                    <h4>(Data Visualization)</h4>
+                                    <p>
+                                        Date: 01 oct 2024<br>
+                                        Time: 1 : 30 PM - 3 : 00 PM<br>
+                                        Venue: DATA ANALYTICS LAB<br>
+                                        Student Co-ordinator: JUSTIN<br>
+                                        Contact No: +91 78712 97683<br>
+                                    </p>
+                                    <a class="btn btn-default" href="visualization.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right"> Rules</span>
+                                    </a>
+                                    <a class="btn btn-default" href="vizre.html">
+                                        <span class="glyphicon glyphicon-circle-arrow-right"> Register</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- performar_area_end  -->
+        <div class="performar_area black_bg" id="about">
+            <div class="container">
+                <div class="row">
+                
+                    <div class="col-lg-12">
+                        <div class="section_title mb-80">
+                            <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s"></h3>
+                        </div>
+                    </div>
+                </div>
+              
+            
+                    <!-- Event Schedule Section -->
+                    <section class="event-schedule">
+                        <h2>Event Schedule</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>EVENT</th>
+                                    <th>TIME</th>
+                                    <th>VENUE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>INAUGURAL</td>
+                                    <td>9:30 AM-10:00 AM</td>
+                                    <td>ANDERSON HALL</td>
+                                </tr>
+                                <tr>
+                                    <td>PROJECT PRESENTATION</td>
+                                    <td>10:30 AM -12:00PM</td>
+                                    <td>ANDERSON HALL</td>
+                                </tr>
+                                <tr>
+                                    <td>HACKATHON</td>
+                                    <td>10:30 AM-12:00PM</td>
+                                    <td>DATA ANALYTICS LAB</td>
+                                </tr>
+                                <tr>
+                                    <td>QUIZ</td>
+                                    <td>10:30 AM-12:00 PM</td>
+                                    <td>CLASSROOM</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="lunch">BREAK</td>
+                                </tr>
+                                <tr>
+                                    <td>ADZAP</td>
+                                    <td>1:30 PM - 2:45 PM</td>
+                                    <td>MARGARET HALL</td>
+                                </tr>
+                                <tr>
+                                    <td>DATA VISUALIZATION</td>
+                                    <td>1:30 PM - 2:45 PM</td>
+                                    <td>DATA ANALYTICS LAB</td>
+                                </tr>
+                                <tr>
+                                    <td>VALEDICTORY</td>
+                                    <td>3:30 PM-4:30 PM</td>
+                                    <td>MARGARET HALL</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+            
+                    <!-- General Rules Section -->
+                    <section class="general-rules">
+                        <h2>General Rules</h2>
+                        <ul >
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;"> D A T A V I S T A is open to PG Departments: MCA / M.Sc Computer Science / Data Science / Statistics / Mathematics / Information Technology (IT).</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">All students are required to carry their college ID cards or Bonafide certificates.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">Aided and SFS streams will be considered separate entries from a college.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">Participants are asked to be present at Anderson Hall for the inaugural function on 01.10.2024 at 9:00 AM.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">Participants should strictly report to the venue 15 minutes prior to the offline events.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">The department acquiring the highest points will be awarded the overall trophy.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">Participants are expected to go through the schedule and make sure that their events don't clash.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">An individual/team can participate in a maximum of two events.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">Participants must adhere to the event rules without fail.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">Misbehavior/Misconduct of any kind will lead to disqualification.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">The judge’s decision will be final for all the events.</li>
+                            <li style="list-style-type: disc; padding-left: 20px; color: white;">Last Date for Online Registration: 28/09/2024.</li>
+                        </ul>
+                        
+                        
+                        
+                        <br>
+                        <a class="download-link" href="Data Vista 2024 - Rule Book.pdf" download>
+                            <span class="download-icon">📥</span> General Rule Book
+                        </a>
+                        
+                   
+                        
+                    </section>
+                    
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!-- performar_area_end  -->
+    <div class="performar_area black_bg" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title mb-80">
+                        <h3 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay=".3s">For Queries Contact Us</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 contacts">
+                    <h style="color: red; font-size: 20px; font-weight: bold;">
+                        <i class="fas fa-user"></i> THIRUVARASU
+                    </h>
+                    <p>
+                        <i class="fas fa-mobile-alt"></i> Mobile: +91 93611 44189
+                    </p>
+                </div>
+                
+                <div class="col-md-6 contacts">
+                    <h style="color: red; font-size: 20px; font-weight: bold;">
+                        <i class="fas fa-user"></i> SENTHAMIL SELVAN
+                    </h>
+                    <p>
+                        <i class="fas fa-mobile-alt"></i> Mobile: +91 87544 40255
+                    </p>
+                </div>
+            
+                <div class="col-md-6 contacts">
+                    <h style="color: red; font-size: 20px; font-weight: bold;">
+                        <i class="fas fa-user"></i> ARIVAZHAGAN
+                    </h>
+                    <p>
+                        <i class="fas fa-mobile-alt"></i> Mobile: +91 63830 88501
+                    </p>
+                </div>
+            
+                <div class="col-md-6 contacts">
+                    <h style="color: red; font-size: 20px; font-weight: bold;">
+                        <i class="fas fa-user"></i> SAMUAL LIVINGSTON
+                    </h>
+                    <p>
+                        <i class="fas fa-mobile-alt"></i> Mobile: +91 91763 14545
+                    </p>
+                </div>
+            </div>
+            
+                
+            </div>
+        </div>
+    </div>
+    <!-- footer_start  -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="footer_widget">
+                            <div class="address_details text-center">
+                                <img src="https://mcc-new.tk/wp-content/uploads/2021/02/mcc-footer-logo.png" alt="MCC Footer Logo">
+                                <p>Tambaram, Chennai – 600 059<br>Tamil Nadu, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <br>
+            <br>
+    
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <p class="copy_right text-center wow fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                                &copy; 2024,<a>DEPARTMENT OF DATA SCIENCE, MCC</a>
+                                <i class="far fa-heart"></i> All rights reserved.
+                            </p>
+                            
+                            <div class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align">
+                              
+                                <a href="https://www.instagram.com/datascience_mcc/" target="_blank" class="gdlr-core-social-network-icon" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="YouTube">
+                                    <i class="fab fa-linkedin"></i>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            
+    
+    <!-- footer_end  -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
